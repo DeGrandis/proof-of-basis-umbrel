@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Proof of Basis
-version: "0.1.0"
+version: "0.1.2"
 tagline: Your bitcoin cost basis and tax records, kept on your node
 icon: https://raw.githubusercontent.com/DeGrandis/proof-of-basis-umbrel/master/icon.svg
 description: >-
@@ -37,7 +37,9 @@ description: >-
 
   Proof of Basis organizes your own records. It is not tax, legal or
   financial advice, and it doesn't file anything for you.
-releaseNotes: ""
+releaseNotes: >-
+  The app's image is now built on Alpine Linux, so the same image also runs on
+  StartOS. Nothing changes in the app itself.
 developer: DeGrandis
 website: https://github.com/DeGrandis/proof-of-basis
 dependencies:
