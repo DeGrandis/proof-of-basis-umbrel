@@ -43,7 +43,7 @@ releaseNotes: >-
   The app's image is now built on Alpine Linux, so the same image also runs on
   StartOS. Nothing changes in the app itself.
 developer: DeGrandis
-website: https://github.com/DeGrandis/proof-of-basis
+website: https://proofofbasis.degrand.is
 dependencies:
   - electrs
 repo: https://github.com/DeGrandis/proof-of-basis
