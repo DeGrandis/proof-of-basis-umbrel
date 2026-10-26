@@ -45,7 +45,14 @@ dependencies:
 repo: https://github.com/DeGrandis/proof-of-basis
 support: https://github.com/DeGrandis/proof-of-basis/issues
 port: 8395
-gallery: []
+# Screenshots from the live demo (invented data), from the app repository at
+# the commit that added them, so later changes there can't break these links.
+gallery:
+  - https://raw.githubusercontent.com/DeGrandis/proof-of-basis/da303cf/docs/images/overview-dark.png
+  - https://raw.githubusercontent.com/DeGrandis/proof-of-basis/da303cf/docs/images/flow.png
+  - https://raw.githubusercontent.com/DeGrandis/proof-of-basis/da303cf/docs/images/taxes.png
+  - https://raw.githubusercontent.com/DeGrandis/proof-of-basis/da303cf/docs/images/review.png
+  - https://raw.githubusercontent.com/DeGrandis/proof-of-basis/da303cf/docs/images/assistant-action.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
