@@ -11,9 +11,14 @@ bitcoin cost basis and tax records, kept on your node.
 3. Open **Proof of Basis App Store** and install **Proof of Basis**.
 
 It needs an Electrum server on the Umbrel (Electrs or Fulcrum; either
-satisfies the `electrs` dependency) and connects to it on its own. If
-Ollama is installed, the assistant finds it too. On first open you choose a
-password for Proof of Basis itself.
+satisfies the `electrs` dependency) and connects to it on its own. On first
+open you choose a password for Proof of Basis itself.
+
+For the optional assistant, install Ollama from the App Store, then in Proof
+of Basis open Settings and, under Assistant, enter
+`http://ollama_ollama_1:11434` as the Ollama server address. Umbrel only
+gives Ollama's address to apps that require Ollama, and the assistant is
+optional, so it isn't filled in for you.
 
 ## What's here
 
@@ -28,8 +33,9 @@ pob-proof-of-basis/
 
 The image is `ghcr.io/degrandis/proof-of-basis`, built for amd64 and arm64
 from the app's repository. The app reads the node's services from the
-environment: `BTCTAX_ELECTRUM_URL` from Umbrel's Electrs/Fulcrum exports,
-and `BTCTAX_OLLAMA_URL` from Ollama's, when it's installed.
+environment: `BTCTAX_ELECTRUM_URL` from Umbrel's Electrs/Fulcrum exports.
+`BTCTAX_OLLAMA_URL` is passed too, but stays empty unless Umbrel starts
+sharing Ollama's address with apps that don't require it.
 
 ## Updating to a new release
 

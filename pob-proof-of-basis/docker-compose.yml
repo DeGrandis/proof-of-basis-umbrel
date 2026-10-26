@@ -19,7 +19,9 @@ services:
       BTCTAX_DATA: /data
       # The node's Electrum server: Electrs, or Fulcrum (which implements it).
       BTCTAX_ELECTRUM_URL: "tcp://${APP_ELECTRS_NODE_IP}:${APP_ELECTRS_NODE_PORT}"
-      # Ollama, when it's installed on this Umbrel; empty otherwise.
+      # Umbrel gives Ollama's address only to apps that require Ollama, so
+      # this is normally empty and the address is entered in Settings
+      # (http://ollama_ollama_1:11434, as the listing says).
       BTCTAX_OLLAMA_URL: "${APP_OLLAMA_URL:-}"
     volumes:
       - ${APP_DATA_DIR}/data:/data

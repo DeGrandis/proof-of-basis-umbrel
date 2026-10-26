@@ -31,8 +31,10 @@ description: >-
   - Export Form 8949 lines and an accountant package for your tax
   professional.
 
-  - An optional assistant answers questions about your records using Ollama,
-  if it's installed on this Umbrel.
+  - An optional assistant answers questions about your records using Ollama
+  on this Umbrel. Install Ollama from the App Store, then in Proof of Basis
+  open Settings and, under Assistant, enter http://ollama_ollama_1:11434 as
+  the Ollama server address.
 
 
   Proof of Basis organizes your own records. It is not tax, legal or
