@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # <app-id>_<service>_1, and the port the app listens on inside.
+      APP_HOST: pob-proof-of-basis_web_1
+      APP_PORT: 8080
+
+  web:
+    # The 0.1.0 release, pinned by its multi-arch (amd64 + arm64) digest.
+    image: ghcr.io/degrandis/proof-of-basis:0.1.0@sha256:511caf1eea00a7eab89cf006851ce63ca2927d7453177ddb2679b0c2f5679cb0
+    # Umbrel's data folders belong to 1000:1000; the image runs as any user.
+    user: "1000:1000"
+    restart: on-failure
+    stop_grace_period: 30s
+    environment:
+      BTCTAX_ADDR: 0.0.0.0:8080
+      BTCTAX_DATA: /data
+      # The node's Electrum server: Electrs, or Fulcrum (which implements it).
+      BTCTAX_ELECTRUM_URL: "tcp://${APP_ELECTRS_NODE_IP}:${APP_ELECTRS_NODE_PORT}"
+      # Ollama, when it's installed on this Umbrel; empty otherwise.
+      BTCTAX_OLLAMA_URL: "${APP_OLLAMA_URL:-}"
+    volumes:
+      - ${APP_DATA_DIR}/data:/data

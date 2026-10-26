@@ -1,0 +1,53 @@
+manifestVersion: 1
+id: pob-proof-of-basis
+storage:
+  dataRoot: data
+category: bitcoin
+name: Proof of Basis
+version: "0.1.0"
+tagline: Your bitcoin cost basis and tax records, kept on your node
+icon: https://raw.githubusercontent.com/DeGrandis/proof-of-basis-umbrel/master/icon.svg
+description: >-
+  When you open it for the first time, you'll choose a password for Proof of
+  Basis itself. Your records stay on this Umbrel; nothing is sent anywhere.
+
+
+  Proof of Basis puts your bitcoin history in one place: your wallets, read
+  straight from your node through Electrs or Fulcrum, and your exchange
+  exports (Coinbase, River, Strike, Fold, or a spreadsheet of your own). It
+  matches what moved
+  between your own accounts, tracks the cost basis of every coin, and shows
+  your gains, income and estimated tax for each year.
+
+
+  - Wallets connect to your node's Electrum server automatically.
+
+  - Label what it couldn't match, with undo for every change.
+
+  - See your coins move between accounts, and where every sold coin came from.
+
+  - Plan a sale and see its tax before you make it.
+
+  - Export Form 8949 lines and an accountant package for your tax
+  professional.
+
+  - An optional assistant answers questions about your records using Ollama,
+  if it's installed on this Umbrel.
+
+
+  Proof of Basis organizes your own records. It is not tax, legal or
+  financial advice, and it doesn't file anything for you.
+releaseNotes: ""
+developer: DeGrandis
+website: https://github.com/DeGrandis/proof-of-basis
+dependencies:
+  - electrs
+repo: https://github.com/DeGrandis/proof-of-basis
+support: https://github.com/DeGrandis/proof-of-basis/issues
+port: 8395
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: DeGrandis
+submission: https://github.com/DeGrandis/proof-of-basis-umbrel
