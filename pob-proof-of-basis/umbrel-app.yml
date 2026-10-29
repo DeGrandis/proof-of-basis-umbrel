@@ -4,17 +4,19 @@ storage:
   dataRoot: data
 category: bitcoin
 name: Proof of Basis
-version: "0.1.2"
+version: "0.1.3"
 tagline: Your bitcoin cost basis and tax records, kept on your node
 icon: https://raw.githubusercontent.com/DeGrandis/proof-of-basis-umbrel/master/icon.svg
 description: >-
   When you open it for the first time, you'll choose a password for Proof of
-  Basis itself. Your records stay on this Umbrel; nothing is sent anywhere.
+  Basis itself. Your records stay on this Umbrel; nothing is sent anywhere
+  unless you choose a hosted assistant.
 
 
   Proof of Basis puts your bitcoin history in one place: your wallets, read
   straight from your node through Electrs or Fulcrum, and your exchange
-  exports (Coinbase, River, Strike, Fold, or a spreadsheet of your own). It
+  exports (Cash App, Coinbase, Fold, River, Strike, or a spreadsheet of your
+  own). It
   matches what moved
   between your own accounts, tracks the cost basis of every coin, and shows
   your gains, income and estimated tax for each year.
@@ -34,14 +36,30 @@ description: >-
   - An optional assistant answers questions about your records using Ollama
   on this Umbrel. Install Ollama from the App Store, then in Proof of Basis
   open Settings and, under Assistant, enter http://ollama_ollama_1:11434 as
-  the Ollama server address.
+  the Ollama server address. Or, if you accept that the provider sees your
+  data, use a hosted provider such as OpenRouter.
+
+  - In English, Spanish, French, German, Polish or Russian.
 
 
   Proof of Basis organizes your own records. It is not tax, legal or
   financial advice, and it doesn't file anything for you.
 releaseNotes: >-
-  The app's image is now built on Alpine Linux, so the same image also runs on
-  StartOS. Nothing changes in the app itself.
+  - Import Cash App exports.
+
+  - The assistant can use a hosted provider in the OpenAI chat format (such as
+  OpenRouter) instead of Ollama. It stays off unless you choose it, and you're
+  asked to confirm that the provider will see your data.
+
+  - The assistant is more reliable with small local models.
+
+  - Each file you import is kept, so you can download it again from Imports.
+
+  - The app is available in Spanish, French, German, Polish and Russian
+  (Settings, Display).
+
+  - Settings has a bar to jump between its sections, and the app's version is
+  shown at the bottom of each page.
 developer: DeGrandis
 website: https://proofofbasis.degrand.is
 dependencies:
