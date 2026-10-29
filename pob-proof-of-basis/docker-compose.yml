@@ -9,7 +9,7 @@ services:
 
   web:
     # The 0.1.3 release, pinned by its multi-arch (amd64 + arm64) digest.
-    image: ghcr.io/degrandis/proof-of-basis:0.1.3@sha256:c5723354c97813285abb5ea0ffc4140bf2a2ba8b90ac4b2adfc0f4277987201e
+    image: ghcr.io/degrandis/proof-of-basis:0.1.4@sha256:605df0ad353c344bbd67327e9598377fbfe2b72fc70416b53304d9b0a4feaec5
     # Umbrel's data folders belong to 1000:1000; the image runs as any user.
     user: "1000:1000"
     restart: on-failure
